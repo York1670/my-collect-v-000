@@ -7,6 +7,7 @@ def my_collect(collection)
     counter = counter +=1
     my_collect(collection) do |collect|
     empty_collect << yield collect.upcase
+    empty_collect
     end
   end
   collection
